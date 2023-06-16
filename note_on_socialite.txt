@@ -1,0 +1,15 @@
+1. Go to Config > services.php:
+  in return paste
+ 
+   'github' => [
+        'client_id' => env('GITHUB_CLIENT_ID'),
+        'client_secret' => env('GITHUB_CLIENT_SECRET'),
+        'redirect' => 'http://127.0.0.1:8000/login/github/callback',
+    ],
+
+2. Go to .env:
+
+GITHUB_CLIENT_ID     =
+GITHUB_CLIENT_SECRET =
+
+3. Go to Github > Settings > Developer Settings > Create an app > get client id and secret set it to env
